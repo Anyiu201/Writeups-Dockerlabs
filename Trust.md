@@ -30,7 +30,7 @@ Una vez iniciado el entorno, se confirmó la dirección IP asignada a la máquin
 172.17.0.2
 ```
 
-![Writeups-Dockerlabs](Imagenes/Pasted image 20261022123128.png)
+![Writeups-Dockerlabs](Imagenes/2.png)
 ### Escaneo de puertos
 
 Se realizó un escaneo inicial con Nmap para identificar los puertos TCP abiertos y detectar los servicios que se ejecutaban en el objetivo.
