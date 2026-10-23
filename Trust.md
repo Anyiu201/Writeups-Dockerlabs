@@ -1,5 +1,5 @@
 
-![Imagenes](Pasted image 20261022112055.png)
+![Imagenes]Pasted image 20261022112055.png
 ## Información general
 
 - **Plataforma:** Dockerlabs
