@@ -89,7 +89,7 @@ feroxbuster -u http:172.17.0.2 -w /usr/share/seclists/Discovery/Web-Content/big.
 
 Durante la enumeración se identificó una página PHP que contenía el nombre `mario`, considerado un posible usuario del sistema.
 
-![[Pasted image 20261022183912.png]]
+![Writeups-Dockerlabs](Imagenes/5.png)
 
 El nombre descubierto constituye una pista que permite orientar la siguiente fase de la evaluación. Sin embargo, encontrar un nombre en una página web no demuestra por sí solo que exista una cuenta local con ese nombre.
 
