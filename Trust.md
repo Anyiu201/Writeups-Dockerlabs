@@ -85,7 +85,7 @@ feroxbuster -u http:172.17.0.2 -w /usr/share/seclists/Discovery/Web-Content/big.
 - `-k`: desactiva la validación del certificado TLS; en este objetivo HTTP no aporta una ventaja práctica.
 - `-r`: sigue redirecciones HTTP.
 
-![[Pasted image 20261022154624.png]]
+![Writeups-Dockerlabs](Imagenes/4.png)
 
 Durante la enumeración se identificó una página PHP que contenía el nombre `mario`, considerado un posible usuario del sistema.
 
