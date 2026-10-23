@@ -1,5 +1,5 @@
 
-![Trust](Imagenes/Pasted image 20261022112055.png)
+![Writeups-Dockerlabs](Imagenes/1.png)
 ## Información general
 
 - **Plataforma:** Dockerlabs
