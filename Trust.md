@@ -158,7 +158,7 @@ El comando solicita ejecutar Vim con `sudo` y utiliza el mecanismo de ejecución
 
 Después de obtener la shell, se comprobó que la identidades efectiva:
 
-![[Pasted image 20261022172541.png]]
+![Writeups-Dockerlabs](Imagenes/10.png)
 
 La escalada de privilegios fue posible porque el usuario tenía autorización para ejecutar un programa que ofrece capacidades más amplias que las necesarias para una tarea administrativa restringida.
 
