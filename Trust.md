@@ -55,7 +55,7 @@ Posteriormente, se efectuó un escaneo específico de los puertos identificados:
 nmap -sCV -p 22,80  172.17.0.2
 ```
 
-![[Pasted image 20261022123003.png]]
+![Writeups-Dockerlabs](Imagenes/3.png)
 
 
 | Puerto | Servicio | Información identificada        |
