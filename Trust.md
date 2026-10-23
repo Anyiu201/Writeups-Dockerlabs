@@ -148,7 +148,7 @@ Cuando la configuración de `sudoers` autoriza ejecutar Vim como `root` sin rest
 
 En este laboratorio, la autorización concedida al usuario `mario` permitió utilizar Vim para obtener una shell privilegiada.
 
-La técnica puede comprobarse en un entorno de laboratorio autorizado con el siguiente comando, siempre que la regla de `sudoers` permita ejecutar Vim como `root`:
+La técnica puede comprobarse con el siguiente comando, siempre que la regla de `sudoers` permita ejecutar Vim como `root`:
 
 ![Writeups-Dockerlabs](Imagenes/9.png)
 
