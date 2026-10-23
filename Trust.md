@@ -110,7 +110,7 @@ Hydra identificó una combinación de credenciales válida para el usuario `mari
 
 Este resultado confirmó que el usuario podía autenticarse mediante SSH utilizando una contraseña presente en los diccionarios de la lisita Seclists.
 
-![[Pasted image 20261022163652.png]]
+![Writeups-Dockerlabs](Imagenes/6.png]]
 
 El resultado evidencia un problema de seguridad en la política de contraseñas de la cuenta. El uso de una contraseña débil o predecible facilita los ataques de adivinación de credenciales cuando el servicio permite intentos repetidos sin controles suficientes.
 ## Acceso inicial
