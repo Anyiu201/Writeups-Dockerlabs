@@ -121,7 +121,7 @@ Tras identificar las credenciales válidas, se estableció una conexión SSH con
 ssh mario@172.17.0.2
 ```
 
-![[Pasted image 20261022165721.png]]
+![Writeups-Dockerlabs](Imagenes/7.png)
 
 En esta etapa se consiguió el acceso inicial al sistema, pero todavía no se disponía de privilegios administrativos.
 
@@ -138,7 +138,7 @@ Este comando permite consultar qué comandos puede ejecutar el usuario mediante 
 
 La salida mostró que el usuario `mario` tenía permiso para ejecutar el binario `vim` con privilegios elevados.
 
-![[Pasted image 20261022165917.png]]
+![Writeups-Dockerlabs](Imagenes/8.png)
 
 ## Abuso de Vim
 
