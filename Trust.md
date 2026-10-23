@@ -150,7 +150,7 @@ En este laboratorio, la autorización concedida al usuario `mario` permitió uti
 
 La técnica puede comprobarse en un entorno de laboratorio autorizado con el siguiente comando, siempre que la regla de `sudoers` permita ejecutar Vim como `root`:
 
-![[Pasted image 20261022172236.png]]
+![Writeups-Dockerlabs](Imagenes/9.png)
 
 El comando solicita ejecutar Vim con `sudo` y utiliza el mecanismo de ejecución de comandos externos del editor para iniciar `/bin/sh`.
 
