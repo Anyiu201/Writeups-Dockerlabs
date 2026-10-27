@@ -55,7 +55,7 @@ El escaneo identifica el siguiente servicio:
 
 | Puerto | Servicio | Información identificada |
 | ------ | -------- | ------------------------ |
-| 80/TCP | HTTP     | Servidor Web unicorn     |
+| 80/TCP | HTTP     | Servidor Web uvicorn     |
 
 La presencia de un servicio HTTP indica que existe una superficie de ataque web que debe analizarse mediante la inspección de páginas, formularios, parámetros y peticiones al servidor.
 
