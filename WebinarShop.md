@@ -109,7 +109,7 @@ La información obtenida muestra que la cuenta de administrador tiene habilitado
 
 Este hallazgo proporciona un nuevo punto de análisis: investigar cómo se implementa la verificación adicional durante el proceso de autenticación.
 
-![Writeups-Dockerlabs](Imagenes/[WebinarShop5.png)
+![Writeups-Dockerlabs](Imagenes/WebinarShop5.png)
 
 ## Identificación del mecanismo de autenticación
 
@@ -121,7 +121,7 @@ El propósito de esta fase es comprobar si la validación del segundo factor se 
 
 Consigo acceder a la aplicación con privilegios de administrador demostrando un fallo en el flujo de autenticación de la aplicación. 
 
-![Writeups-Dockerlabs](Imagenes/[WebinarShop7.png)
+![Writeups-Dockerlabs](Imagenes/WebinarShop7.png)
 
 ## Análisis de seguridad y mitigaciones
 
