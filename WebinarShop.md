@@ -1,5 +1,4 @@
 
-
 ![Writeups-Dockerlabs](Imagenes/WebinarShop1.png)
 ## Información general
 
@@ -31,7 +30,7 @@ Una vez desplegado el entorno, identifico la dirección IP asignada a la máquin
 172.17.0.2
 ```
 
-![[WebinarShop2.png]]
+![Writeups-Dockerlabs](Imagenes/WebinarShop2.png)
 ### Escaneo de puertos
 
 Realizo un escaneo de puertos TCP con Nmap para identificar los servicios expuestos por la máquina objetivo.
@@ -52,7 +51,7 @@ nmap -p- --open -sS -sC -sV --min-rate=5000 -vvv -n -Pn -oN escaneo TARGET_IP
 
 El escaneo identifica el siguiente servicio:
 
-![[WebinarShop3.png]]
+![Writeups-Dockerlabs](Imagenes/WebinarShop3.png)
 
 | Puerto | Servicio | Información identificada |
 | ------ | -------- | ------------------------ |
@@ -82,7 +81,7 @@ Utilizo Burp Suite para interceptar y examinar las peticiones HTTP generadas dur
 
 El objetivo es identificar los parámetros enviados al servidor y comprobar si alguno podría ser susceptible a una inyección SQL.
 
-![[WebinarShop4.png]]
+![Writeups-Dockerlabs](Imagenes/WebinarShop4.png)
  
 Guardo la petición seleccionada en un archivo de texto para utilizarla posteriormente con sqlmap.
 
@@ -110,7 +109,7 @@ La información obtenida muestra que la cuenta de administrador tiene habilitado
 
 Este hallazgo proporciona un nuevo punto de análisis: investigar cómo se implementa la verificación adicional durante el proceso de autenticación.
 
-![[WebinarShop5.png]]
+![Writeups-Dockerlabs](Imagenes/[WebinarShop5.png)
 
 ## Identificación del mecanismo de autenticación
 
@@ -118,11 +117,11 @@ Utilizo Burp Suite para examinar el flujo de autenticación y observar cómo la 
 
 El propósito de esta fase es comprobar si la validación del segundo factor se realiza correctamente en el servidor y si existe alguna posibilidad de omitirla.
 
-![[WebinarShop6.png]]
+![Writeups-Dockerlabs](Imagenes/WebinarShop6.png)
 
 Consigo acceder a la aplicación con privilegios de administrador demostrando un fallo en el flujo de autenticación de la aplicación. 
 
-![[WebinarShop7.png]]
+![Writeups-Dockerlabs](Imagenes/[WebinarShop7.png)
 
 ## Análisis de seguridad y mitigaciones
 
