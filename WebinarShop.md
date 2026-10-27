@@ -1,6 +1,6 @@
 
 
-![[WebinarShop1.png]]
+![Writeups-Dockerlabs](Imagenes/WebinarShop1.png)
 ## Información general
 
 - **Plataforma:** Dockerlbs
