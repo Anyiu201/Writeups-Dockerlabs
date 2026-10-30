@@ -1,4 +1,4 @@
-![Wireup-Dokerlab[Imagenes/banking1.png]]
+![Writeups-Dockerlabs](Imagenes/banking1.png)
 ## Información general
 
 - **Plataforma:** Dockerlbs
@@ -30,7 +30,7 @@ Una vez desplegado el entorno, identifico la dirección IP asignada a la máquin
 ```
 
 
-![[banking2.png|700]]
+![Writeups-Dockerlabs](Imagenes/banking2.png|700)
 ### Escaneo de puertos
 
 Realizo un escaneo de puertos TCP con Nmap para identificar los servicios expuestos por la máquina objetivo.
@@ -51,7 +51,7 @@ nmap -p- --open -sS -sC -sV --min-rate=5000 -vvv -n -Pn -oN escaneo 172.17.0.2
 
 El escaneo identifica el siguiente servicio:
 
-![[banking3.png|700]]
+![Writeups-Dockerlabs](Imagenes/banking3.png|700)
 
 | Puerto   | Servicio | Información identificada |
 | -------- | -------- | ------------------------ |
@@ -83,11 +83,11 @@ JADX permite decompilar aplicaciones Android y examinar el código reconstruido 
 
 Durante la revisión encuentro una ruta que apunta a un recurso del servidor web.
 
-![[banking4.png]]
+![Writeups-Dockerlabs](Imagenes/banking4.png)
 
 A partir de la ruta identificada durante el análisis estático, accedo al recurso publicado en el servidor y compruebo que es posible recuperar un repositorio Git.
 
-![[banking5.png|700]]
+![Writeups-Dockerlabs](Imagenes/banking5.png|700)
 
 Ejecuto el siguiente comando:
 
@@ -103,7 +103,7 @@ Una vez descargado el repositorio, reviso los archivos disponibles en busca de i
 
 Durante la inspección encuentro un archivo llamado `Copy.py` que contiene una variable `SECRET_KEY` asociada al usuario `admin`.
 
-![[banking6.png|700]]
+![Writeups-Dockerlabs](Imagenes/banking6.png|700)
 
 Accedo al portal bancario y utilizo una cuenta de prueba creada durante el ejercicio.
 
@@ -119,13 +119,13 @@ Con el token de mi cuenta de prueba, examino su estructura y las declaraciones i
 
 Modifico las declaraciones pertinentes para que el token represente al usuario `admin` y verifico si la clave descubierta permite producir una firma que el servidor acepte.
 
-![[banking7.png|700]]
+![Writeups-Dockerlabs](Imagenes/banking7.png|700)
 
 Una vez obtenido el token que representa al usuario administrador, sustituyo el token de mi sesión de prueba por el token manipulado.
 
 Recargo el portal y compruebo que la aplicación muestra información correspondiente a la cuenta administrativa.
 
-![[banking8.png]]
+![Writeups-Dockerlabs](Imagenes/banking8.png)
 
 Este resultado confirma que la manipulación del token ha permitido acceder a información protegida de otro usuario dentro del laboratorio.
 
