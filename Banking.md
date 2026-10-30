@@ -30,7 +30,7 @@ Una vez desplegado el entorno, identifico la dirección IP asignada a la máquin
 ```
 
 
-![Writeups-Dockerlabs](Imagenes/banking2.png|700)
+![Writeups-Dockerlabs](Imagenes/banking2.png)
 ### Escaneo de puertos
 
 Realizo un escaneo de puertos TCP con Nmap para identificar los servicios expuestos por la máquina objetivo.
@@ -51,7 +51,7 @@ nmap -p- --open -sS -sC -sV --min-rate=5000 -vvv -n -Pn -oN escaneo 172.17.0.2
 
 El escaneo identifica el siguiente servicio:
 
-![Writeups-Dockerlabs](Imagenes/banking3.png|700)
+![Writeups-Dockerlabs](Imagenes/banking3.png)
 
 | Puerto   | Servicio | Información identificada |
 | -------- | -------- | ------------------------ |
@@ -87,7 +87,7 @@ Durante la revisión encuentro una ruta que apunta a un recurso del servidor web
 
 A partir de la ruta identificada durante el análisis estático, accedo al recurso publicado en el servidor y compruebo que es posible recuperar un repositorio Git.
 
-![Writeups-Dockerlabs](Imagenes/banking5.png|700)
+![Writeups-Dockerlabs](Imagenes/banking5.png)
 
 Ejecuto el siguiente comando:
 
@@ -103,7 +103,7 @@ Una vez descargado el repositorio, reviso los archivos disponibles en busca de i
 
 Durante la inspección encuentro un archivo llamado `Copy.py` que contiene una variable `SECRET_KEY` asociada al usuario `admin`.
 
-![Writeups-Dockerlabs](Imagenes/banking6.png|700)
+![Writeups-Dockerlabs](Imagenes/banking6.png)
 
 Accedo al portal bancario y utilizo una cuenta de prueba creada durante el ejercicio.
 
@@ -119,7 +119,7 @@ Con el token de mi cuenta de prueba, examino su estructura y las declaraciones i
 
 Modifico las declaraciones pertinentes para que el token represente al usuario `admin` y verifico si la clave descubierta permite producir una firma que el servidor acepte.
 
-![Writeups-Dockerlabs](Imagenes/banking7.png|700)
+![Writeups-Dockerlabs](Imagenes/banking7.png)
 
 Una vez obtenido el token que representa al usuario administrador, sustituyo el token de mi sesión de prueba por el token manipulado.
 
