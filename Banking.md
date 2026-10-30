@@ -1,4 +1,4 @@
-![[banking1.png]]
+![Wireup-Dokerlab[Imagenes/banking1.png]]
 ## Información general
 
 - **Plataforma:** Dockerlbs
